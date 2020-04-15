@@ -1,0 +1,73 @@
+*{
+    /*border: 1px solid white;*/
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url('background.jpg');
+    background-color: #00000033;
+    background-size: cover;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.logIn_form{
+    display: block;
+    width: 100%;
+    
+}
+.formLogin{
+
+    display: block;
+    width: 35%;
+    background-color: #37251ceb;
+    margin: 2% auto;
+    padding-bottom: 5px;
+}
+
+.formLogin *{
+    display: block;
+    width: 70%;
+    margin: 12px 15%;
+    color: #ffffff;
+}
+
+.formLogin h1{
+    text-align: center;
+    background-color: #a54804c7;
+    padding: 5px 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.formLogin button{
+    background-color: #a54804c7;
+    border: 0px;
+    padding: 10px 0px;
+}
+
+
+.formLogin .buttonlog, .btn-outline-success {
+
+   width: 50%;
+   margin: 12px auto;
+}
+
+
+.formLogin .input_login{
+    color: #141414;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 4px 2px;
+    margin-bottom: 25px;
+    border-width: 0 0 2px;
+    border-bottom-color: #a54804c7;
+}
+
+.formLogin #olvido_pass{
+    font-size: 0.8em;
+    text-align: right;
+    text-decoration: underline;
+}

@@ -9,24 +9,41 @@ echo '<pre>', var_dump($_COOKIE) ,'</pre>';
 $DBname = "jhonprueba";
 
 
-$conexion = new mysqli('localhost','jhonfer9731','7DgRK4M5b5uDian3',$DBname);// hostname, nombre usuario, nombre de la DB
+$conexion = new mysqli('localhost','jhonfer9731','7DgRK4M5b5uDian3');// hostname, nombre usuario, nombre de la DB
 if (mysqli_connect_error()){  // si hay un error para la ejecucion
     die("Conexion fallida: ".mysqli_connect_error());
 }
 echo "connected successfully to data base: {$DBname}<br>";
 
-//$newSql = "CREATE DATABASE jhonprueba"; // peticion en SQL
+$newSql = "CREATE DATABASE jhonprueba"; // peticion en SQL
 
+if($conexion->query($newSql) === true){
+    echo "<br> Base de datos jhonprueba creada<br>";
+}else
+{
+    echo "<br> No se pudo crear base de datos o ya existe <br>";
+}
 
-//prepareStatements($conexion);
+$imprimir = $conexion->query("USE jhonprueba") ? "Usando base de datos jhonprueba<br>" : "No se puede usar Jhonprueba<br>";
+echo $imprimir;
+
+prepareStatements($conexion);
 
 
 //selectData($conexion);
 
-//selecDataFilter($conexion,'Juan');
+//selecDataFilter($conexion,'Pedro');
 
 
-selectDataOrder($conexion,'id','asc');
+
+
+
+/*crearTabla($conexion);
+insertarElemento($conexion);
+multiquery($conexion);*/
+selectDataOrder($conexion,'apellido','asc');
+
+die;
 
 $peticion = "SELECT MAX(ID) AS LastID FROM Myguest";
 $limite = (int) $conexion->query($peticion)->fetch_array()["LastID"];
