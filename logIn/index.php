@@ -37,7 +37,7 @@
             <span>Ingrese su correo: </span>
             <input type="email" name ="correo" class= "input_login"></input>
             <span>Ingrese su contraseña: </span>
-            <input  type="password" name ="contraseña" class= "input_login"></input>
+            <input  type="password" name ="contrasena" class= "input_login"></input>
             <button type="submit" name="ingresar" class="btn btn-outline-success" value="true">Ingresar</button>
             <button name="registro" class = "buttonlog" id="reg_btn">Registro</button>
             <div class="clear"></div>
@@ -52,9 +52,9 @@
             <span>Ingrese su correo: </span>
             <input type="email" name ="correo" class= "input_login"></input>
             <span>Ingrese su contraseña: </span>
-            <input  type="password" name ="contraseña" class= "input_login"></input>
+            <input  type="password" name ="contrasena" class= "input_login"></input>
             <span>Repita su contraseña: </span>
-            <input  type="password" name ="contraseñax2" class= "input_login"></input>
+            <input  type="password" name ="contrasenax2" class= "input_login"></input>
             <button type="submit" class="btn btn-outline-success" name="completar_reg" class = "buttonlog" value=true>Completar Registro</button>
             <span style="text-align: center;"> Ya posee una cuenta? </span>
             <button name="login" class = "buttonlog" id="login_btn">Ingrese Aqui</button>
