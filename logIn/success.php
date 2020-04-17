@@ -1,9 +1,9 @@
+
+<!DOCTYPE html>
 <?php
 session_start();
-//echo "<h2 style = ".'"color: black;"'.">",($_SESSION["mensaje"]),"</h2>";
 
 ?>
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@ session_start();
 <body>
     <div class="logIn_form" >
         <form action="actualizar_contra.php" class =" formLogin">
-            <h1> Error de operación </h1>
+            <h1> Confirmacion exitosa de operación </h1>
             <span><?php echo $_SESSION["mensaje"]?></span>
             <a name="back" class="btn btn-outline-success" value="true" href="index.php">Regresar a Inicio</a>
             <div class="clear"></div>
@@ -27,6 +27,3 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<?php
-
